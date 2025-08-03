@@ -14,7 +14,7 @@ fi
 
 # Run the PostgreSQL container
 echo "Running PostgreSQL container..."
-docker run --name postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d harbor.narvanventures.com/dockerhub/postgres
+docker run --name postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres
 
 # Wait for PostgreSQL to initialize
 echo "Waiting 5 seconds for PostgreSQL to initialize..."
